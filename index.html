@@ -24,10 +24,28 @@
     <div class = "picture">
         <img id = "status" src="images/Fail.png" alt="Fail">
     </div>
-    <div id="balRead">
-        <h3> Your Balance is </h3>
-        <p id="balanceDisplay">0</p>
+    <div class="balAndBet">
+        <div id="balRead">
+            <h3> Your Balance is </h3>
+            <p id="balanceDisplay">0</p>
+        </div>
+        <div>
+            <a href="#" id="betBtn">  
+        <div id="incBet">Change Bet!</div>
+            </a>
+            <input id="incBetInp" type="number" placeholder="Input new bet up to 100" >
+        </div>
     </div>
+
+    <div id="modWrap">
+        <div id="modal">
+            <h2>You need more money to make this bet!</h2>
+            <p>Decease your bet or add more to your balance</p>
+            <a href="#" id="modalClose"><div>Okay!</div></a>
+        </div>
+    </div>
+    
+
     
 
 </body>

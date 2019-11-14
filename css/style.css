@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 .picture,
 .SlotImages {
     display: flex;
@@ -17,17 +21,53 @@
 
   }
 
+.balAndBet {
+  display: flex;
+  justify-content: space-around;
+}
+
 #balRead {
   border-radius: 20px;
-  border: solid 2px darkgray;
-  height: 25vw;
   max-height: 20vh;
-  width: 50vw;
+  height: 20vw;
+
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+}
+
+#balRead ,
+#incBet{
+  
+  border: solid 2px darkgray;
+  width: 40vw;
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(133, 188, 236);
+  margin-bottom: 0;
+}
+
+#incBet {
+  border-radius: 20px 20px 0 0;
+  height: 10vw;
+  max-height: 10vh;
+  text-align: center;
+}
+
+#incBetInp {
+  border-radius: 0 0 20px 20px ;
+  border: solid 2px darkgray;
+  border-top: none;
+  width: 40vw; 
+  height: 10vw;
+  max-height: 10vh;
+  text-align: center;
+  margin-top: 0;
 }
 
 h3, 
@@ -35,4 +75,36 @@ p {
   display: block;
   text-align: center;
   
+}
+
+#modal{
+  background-color: white;
+  border-radius: 20px ;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#modWrap {
+  background-color: rgba(0, 0, 0, 0.427);
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 30vh;
+}
+
+#modalClose div {
+  text-align: center;
+  border-radius: 10px ;
+  border: solid 2px darkgray; 
+  width: 55px;
+  height:30px;
+  margin: auto;
 }
