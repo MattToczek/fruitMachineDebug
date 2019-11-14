@@ -1,9 +1,26 @@
+.picture,
 .SlotImages {
-    display: grid | inline-grid;
-    width: 50%;
+    display: flex;
+    max-width: 100%;
+    
+    justify-content: center;
   }
 
-  .Start{
-    display: grid;
-    width: 50%;
+.Start{
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
+
+#status{
+    height: 30vh;
+
+  }
+
+#balRead {
+  border: solid 2px tomato;
+  height: 25vw;
+  max-height: 20vh;
+  width: 75vw;
+  margin: 1rem auto;
+}
