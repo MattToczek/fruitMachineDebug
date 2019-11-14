@@ -1,7 +1,7 @@
 //Mr Seagull Wrote this - IT IS AWESOMMMMMMMEEEEEEEEEEE
 
 document.getElementById("Start").addEventListener("click", () => {
-    if(balance > bet){
+    if(balance >= bet){
     spin();
     } else {
         modal.style.display = "flex";
@@ -29,7 +29,7 @@ function loser(){
 
 function winner(){
     document.getElementById("status").src = "images/BigWin.png"
-    balance = bet*winOrder;
+    balance += bet*winOrder;
 }
 
 function spin(){
