@@ -18,9 +18,21 @@
   }
 
 #balRead {
-  border: solid 2px tomato;
+  border-radius: 20px;
+  border: solid 2px darkgray;
   height: 25vw;
   max-height: 20vh;
-  width: 75vw;
+  width: 50vw;
   margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(133, 188, 236);
+}
+
+h3, 
+p {
+  display: block;
+  text-align: center;
+  
 }
