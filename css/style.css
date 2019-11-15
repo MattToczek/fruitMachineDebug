@@ -21,7 +21,9 @@
 
   }
 
+
 .balAndBet {
+  max-width: 100%;
   display: flex;
   justify-content: space-around;
 }
@@ -91,7 +93,8 @@ h3,
 p {
   display: block;
   text-align: center;
-  
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #modal{
